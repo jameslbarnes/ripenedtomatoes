@@ -1,0 +1,8 @@
+curl \
+-F 'name="new study"' \
+-F 'description="test creative"' \ 
+-F 'start_time=1478387569' \
+-F 'end_time=1479597169' \
+-F 'type=SPLIT_TEST' \
+-F 'cells=[{name:"Group A",treatment_percentage:50,adsets:[<AD_SET_ID>]},{name:"Group B",treatment_percentage:50,adsets:[<AD_SET_ID>]}]' \
+-F 'access_token=<ACCESS_TOKEN>' \ https://graph.facebook.com/<API_VERSION>/<BUSINESS_ID>/ad_studies
